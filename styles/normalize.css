@@ -6,3 +6,32 @@ ul.octodex {
     position: relative;
     display: flex;
 }
+
+.image-caption {
+    position: relative;
+    display: inline;
+}
+
+.image-footer {
+    position: relative;
+    display: inline;
+}
+
+a {
+    position: relative;
+}
+
+.authors {
+    display: inline;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+}
+
+.authors a img {
+    position: relative;
+    width: 40px;
+    align-items: right;
+}
