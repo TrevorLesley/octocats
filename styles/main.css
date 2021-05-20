@@ -1,77 +1,75 @@
-/* Start at the largest level first. */
-
 * {
     box-sizing: border-box;
-    }
-
-img {
+  }
+  
+  body {
+    text-align: center;
+    font-family: Helvetica, arial, sans-serif;
+  }
+  
+  img {
     width: 100%;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
-}
-
-.octocats {
+  }
+  
+  .octocat {
     display: inline-block;
     width: 30%;
-}
-
-body {
-    text-align: center;
-    font-family: helvetica, Arial, sans-serif;
-    
-}
-
-.octocats > a {
+  
+  }
+  
+  .octocat > a {
     border: solid 1px #CACACA;
-    height: 100%;
-    width: 100%;
     display: inline-block;
     border-radius: 3px;
-}
-
-.octocats > a::after {
+    position: relative;
+  }
+  
+  .octocat > a::after {
     content: '';
     height: 0;
     width: 0;
     border-top: solid 10px #CACACA;
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
-
+  
     position: absolute;
     top: 100%;
     right: 1%;
-}
-
-.image-number::before {
+  }
+  
+  .image-number {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    left: 0;
+  }
+  
+  .image-number::before {
     content: '#';
-}
-
-.image-footer {
+  }
+  
+  .image-footer {
     border-bottom: solid 1px #CACACA;
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
-}
-
-.author > li > a {
+  
+  }
+  
+  .image-caption {
+    text-align: right;
+  }
+  
+  .authors {
+    display: inline-block;
+  }
+  
+  .authors > li > a {
     display: inline-block;
     width: 30px;
-}
-
-.authors {
-    display: inline-block;
-}
-
-.image-caption {
-    text-align: right;
-}
-
-.image-number {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     left: 0;
-}
+  }
